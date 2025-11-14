@@ -10,10 +10,10 @@ class Pengalaman extends BaseController
     {
         $model = new PengalamanModel();
         
-        // Data untuk view
+      
         $data = [
-            'title' => 'Riwayat Pengalaman', // bisa ganti sesuai kebutuhan
-            'pengalaman' => $model->findAll() // ambil semua data pengalaman
+            'title' => 'Riwayat Pengalaman', 
+            'pengalaman' => $model->findAll() 
         ];
 
         return view('pengalaman_view', $data);

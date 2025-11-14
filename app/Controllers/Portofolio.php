@@ -2,21 +2,21 @@
 
 namespace App\Controllers;
 
-use App\Models\PortofolioModel; // Menggunakan Model dengan ejaan 'Portofolio'
+use App\Models\PortofolioModel; 
 
-class Portofolio extends BaseController // Nama Class diubah menjadi 'Portofolio'
+class Portofolio extends BaseController 
 {
     public function index()
     {
-        $portofolioModel = new PortofolioModel(); // Menggunakan variabel dengan ejaan 'Portofolio'
+        $portofolioModel = new PortofolioModel(); 
 
         $data = [
             'title' => 'Portofolio Proyek',
-            // Memanggil fungsi getPortofolio() dari Model
+
             'portofolio' => $portofolioModel->getPortofolio() 
         ];
 
-        // Memanggil View yang sudah diubah namanya menjadi 'portofolio_view'
+  
         return view('portofolio_view', $data);
     }
 }

@@ -96,7 +96,7 @@ function getLevelColorClass($level) {
     transform: scale(1.05);
 }
 
-/* --- Skema Warna Fluorescent --- */
+
 .kategori-badge-ahli, .progress-bar-kategori-ahli {
     background-color: #39ff14; 
     box-shadow: 0 0 10px #39ff14;
@@ -120,7 +120,7 @@ function getLevelColorClass($level) {
     box-shadow: 0 0 10px #ff66cc;
     color: #000;
 }
-/* --- Akhir Skema Warna Fluorescent --- */
+
 
 
 .progress {

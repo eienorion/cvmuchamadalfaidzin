@@ -58,7 +58,7 @@
     padding-bottom: 80px;
 }
 
-/* --- Timeline Garis Vertikal --- */
+
 .timeline {
     border-left: 3px solid #3a3a3a; 
     box-shadow: 0 0 5px rgba(0, 255, 255, 0.1); 
@@ -66,7 +66,6 @@
     padding-left: 25px !important;
 }
 
-/* --- Titik Timeline (Dot) --- */
 .timeline-dot {
     width: 25px; 
     height: 25px;
@@ -90,28 +89,28 @@
     font-size: 0.7rem; 
 }
 
-/* --- Card Pengalaman --- */
+
 .experience-card {
     background-color: var(--card-color); 
     border-radius: 10px;
     border: 1px solid #3a3a3a;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
-    border-left: 4px solid var(--secondary-neon); /* Neon border halus di kiri */
+    border-left: 4px solid var(--secondary-neon); 
 }
 
 .experience-card:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-    border-color: var(--primary-neon); /* Border card berubah warna saat hover */
+    border-color: var(--primary-neon); 
     border-left: 4px solid var(--primary-neon); 
 }
 
 .card-title {
-    color: #fff; /* Judul posisi diubah menjadi putih */
+    color: #fff; 
 }
 
 .card-subtitle.text-secondary-neon-sub {
-    color: var(--primary-neon) !important; /* Subtitle (perusahaan) menggunakan warna neon primer */
+    color: var(--primary-neon) !important;
     font-weight: 500;
 }
 
@@ -123,8 +122,8 @@
     border-radius: 5px;
     font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid #4a4a4a; /* Border lebih gelap */
-    box-shadow: 0 0 3px rgba(57, 255, 20, 0.3); /* Shadow lebih lembut */
+    border: 1px solid #4a4a4a; 
+    box-shadow: 0 0 3px rgba(57, 255, 20, 0.3); 
 }
 
 .description-text {
@@ -132,7 +131,7 @@
     font-size: 0.95rem;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
     .timeline {
         padding-left: 20px !important;

@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\BiodataModel;
 use App\Models\PendidikanModel;
 use App\Models\PengalamanModel;
-use App\Models\SkillModel; // Ditambahkan use untuk SkillModel
+use App\Models\SkillModel; 
 
 class Home extends BaseController
 {
@@ -14,7 +14,7 @@ class Home extends BaseController
         $biodataModel = new BiodataModel();
         $pendidikanModel = new PendidikanModel();
         $pengalamanModel = new PengalamanModel();
-        $skillModel = new SkillModel(); // Inisiasi Model Skill
+        $skillModel = new SkillModel(); 
 
         $data = [
             'title' => 'Beranda',

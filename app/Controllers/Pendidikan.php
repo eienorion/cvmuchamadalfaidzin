@@ -10,7 +10,7 @@ class Pendidikan extends BaseController
     {
         $model = new PendidikanModel();
         $data = [
-            'title' => 'Riwayat Pendidikan', // <-- kirim variabel title
+            'title' => 'Riwayat Pendidikan', 
             'pendidikan' => $model->orderBy('tahun_mulai', 'ASC')->findAll()
         ];
 
