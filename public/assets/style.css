@@ -1,0 +1,289 @@
+
+:root {
+    --main-color-progress-bar-kategori-ahli: #39ff14;
+    --main-color-progress-bar-kategori-mahir: #00ffff;
+    --main-color-progress-bar-kategori-menengah: #ffff33;
+    --main-color-progress-bar-kategori-dasar: #ff66cc;
+    
+    --bg-color: #1A1A1A;
+    --card-color: #282828;
+    --card-hover-color: #333333;
+    --text-color: #eee;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #111 !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero h3, .hero h4 {
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.biodata-section,
+.pendidikan-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.pendidikan-section {
+    transform: translateY(-40px);
+}
+
+.btn-scroll {
+    display: inline-block;
+    width: auto;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    max-width: 150px;
+}
+
+.btn-scroll:hover {
+    background-color: var(--text-color);
+    color: #121212;
+}
+
+/* Mengatur warna teks & ikon umum menjadi putih */
+.neon-icon-white,
+.icon-white {
+    color: #fff !important; 
+    text-shadow: none !important; 
+    margin-right: 10px;
+}
+
+.section-title {
+    color: var(--text-color);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid var(--main-color-progress-bar-kategori-mahir);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px !important;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    /* Menghapus warna #fff di sini agar ikon bisa mendapatkan warna dari kelas spesifik */
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.3s;
+    background-color: #000;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+/* KECUALI UNTUK IKON WHATSAPP & EMAIL, atur warna ikon di sini */
+/* Jika Anda menggunakan ikon yang seharusnya berwarna putih (seperti LinkedIn, GitHub, dsb.), tambahkan kelas ini pada ikon mereka */
+.contact-icons i {
+    color: #fff; /* Defaultkan ke putih untuk ikon sosial lain */
+    text-shadow: none !important; 
+}
+/* Anda bisa menimpa warna ini di HTML atau CSS terpisah jika ikon WA/Email punya warna khusus */
+.fa-whatsapp {
+    color: #25d366 !important; /* Warna Hijau WhatsApp */
+}
+.fa-envelope {
+    color: #bb001b !important; /* Warna Merah Gmail/Email umum */
+}
+
+
+.biodata-card {
+    background: var(--card-color);
+    border: 1px solid #3a3a3a;
+    border-left: 5px solid var(--main-color-progress-bar-kategori-menengah); 
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.biodata-card:hover {
+    border-left-color: var(--main-color-progress-bar-kategori-mahir);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.biodata-card p strong {
+    color: #fff;
+    display: inline-block;
+    width: 150px;
+    font-weight: 600;
+}
+
+.biodata-card p span {
+    color: #fff !important;
+}
+
+.pendidikan-card {
+    background: var(--card-color);
+    border: 1px solid #3a3a3a;
+    border-radius: 8px !important;
+    color: var(--text-color);
+    border-left: 4px solid var(--main-color-progress-bar-kategori-ahli);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: border-left-color 0.3s;
+}
+
+.pendidikan-card:hover {
+    border-left-color: var(--main-color-progress-bar-kategori-menengah);
+}
+
+.pendidikan-card h5,
+.pendidikan-card h5 span,
+.pendidikan-card p, 
+.pendidikan-card p span {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+
+.teaser-card {
+    background-color: var(--card-color); 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3a3a3a;
+}
+
+.skill-card-compact {
+    background-color: #1a1a1a !important; 
+    border: 1px solid #444; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card-compact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-color: #fff; 
+}
+
+.skill-card-compact i,
+.skill-card-compact h6 {
+    color: #fff !important;
+    text-shadow: none !important;
+}
+
+.skill-badge-compact {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    background-color: transparent !important;
+    border: 1px solid currentColor;
+    color: #fff !important;
+}
+
+.progress-bar-kategori-ahli-border:hover { border-color: var(--main-color-progress-bar-kategori-ahli); }
+.progress-bar-kategori-mahir-border:hover { border-color: var(--main-color-progress-bar-kategori-mahir); }
+.progress-bar-kategori-menengah-border:hover { border-color: var(--main-color-progress-bar-kategori-menengah); }
+.progress-bar-kategori-dasar-border:hover { border-color: var(--main-color-progress-bar-kategori-dasar); }
+
+.custom-accordion {
+    --bs-accordion-bg: var(--card-color);
+    --bs-accordion-color: #fff; 
+    --bs-accordion-active-bg: var(--card-hover-color);
+    --bs-accordion-active-color: #fff; 
+    --bs-accordion-border-color: #444;
+}
+
+.experience-item {
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-custom-button {
+    background-color: var(--card-color) !important;
+    color: #fff !important;
+    padding: 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.accordion-custom-button:not(.collapsed) {
+    background-color: var(--card-hover-color) !important;
+    color: #fff !important;
+    box-shadow: inset 0 -1px 0 var(--main-color-progress-bar-kategori-mahir);
+}
+
+.accordion-custom-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.accordion-custom-button:hover {
+    background-color: #333 !important;
+}
+
+.experience-body {
+    background-color: #333333 !important;
+    color: #ccc;
+    border-top: 1px solid #444;
+}
+
+.experience-date-text-white,
+.description-text-white {
+    color: #fff;
+    font-weight: 500;
+}
+
+.text-secondary-neon {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .info-wrapper {
+        flex-direction: column;
+    }
+}
