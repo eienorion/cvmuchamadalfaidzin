@@ -72,10 +72,16 @@ $topSkills = array_slice($skills ?? [], 0, 4);
                         <p class="mb-1"><i class="fas fa-book-reader neon-text-light"></i> Jurusan: <span class="text-white"><?= esc($item['jurusan']) ?></span></p>
                     <?php endif; ?>
 
-                    <p class="mb-0"><i class="fas fa-calendar-alt neon-text-secondary"></i> Tahun: 
-                        <span class="text-white"><?= esc($item['tahun_mulai'] ?? '-') ?></span>
-                        - <span class="text-white"><?= esc($item['tahun_selesai']) ?: 'Sekarang' ?></span>
-                    </p>
+                    <<p class="mb-0">
+    <i class="fas fa-calendar-alt neon-text-secondary"></i> Tahun: 
+    <span class="text-white">
+        <?= esc($item['tahun_mulai'] ?? '-') ?>
+    </span>
+    - 
+    <span class="text-white">
+        <?= (empty($item['tahun_selesai']) ? 'Sekarang' : esc($item['tahun_selesai'])) ?>
+    </span>
+</p>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
@@ -85,7 +91,13 @@ $topSkills = array_slice($skills ?? [], 0, 4);
 </div>
 
 <div class="container my-5 skill-teaser">
-    <h3 class="mb-4 section-title text-start ms-lg-5 ps-lg-5"><i class="fas fa-bolt neon-icon-dark"></i>Kategori Skill</h3>
+<h3 class="mb-4 section-title text-start" 
+    style="border-bottom-width: 2px; 
+           border-bottom-style: solid; 
+           width: fit-content;
+           margin-left: 7rem;"> 
+    <i class="fas fa-bolt neon-icon-dark"></i>Kategori Skill
+</h3>
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="row teaser-card p-4 g-3">

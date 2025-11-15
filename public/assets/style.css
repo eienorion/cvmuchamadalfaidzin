@@ -1,4 +1,3 @@
-
 :root {
     --main-color-progress-bar-kategori-ahli: #39ff14;
     --main-color-progress-bar-kategori-mahir: #00ffff;
@@ -91,11 +90,13 @@ nav {
     margin-right: 10px;
 }
 
+/* PERBAIKAN: Menambahkan width: fit-content; agar garis bawah tidak kepanjangan */
 .section-title {
     color: var(--text-color);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid var(--main-color-progress-bar-kategori-mahir);
     display: inline-block;
+    width: fit-content; 
     padding-bottom: 5px;
     margin-bottom: 30px !important;
 }
@@ -281,6 +282,7 @@ nav {
 .text-secondary-neon {
     color: #fff;
 }
+
 
 @media (max-width: 768px) {
     .info-wrapper {

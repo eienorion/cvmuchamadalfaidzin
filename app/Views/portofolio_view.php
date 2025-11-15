@@ -24,9 +24,6 @@
                             </div>
 
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center">
-                            <small class="text-muted">Proyek</small>
-                        </div>
                     </div>
                 </div>
 

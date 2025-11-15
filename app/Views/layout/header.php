@@ -25,7 +25,6 @@
 
         <div id="navbarNav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
-
                 <li class="nav-item"><a class="nav-link" href="<?= site_url('home') ?>">Home</a></li>
                  <li class="nav-item"><a class="nav-link" href="pendidikan">Pendidikan</a></li>
                 <li class="nav-item"><a class="nav-link" href="pengalaman">Pengalaman</a></li>

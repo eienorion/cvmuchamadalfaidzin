@@ -17,7 +17,7 @@
                     <div class="card experience-card ms-4 shadow">
                         <div class="card-body p-4">
                             <div class="date-badge mb-3">
-                                <i class="fas fa-calendar-alt"></i> <?= esc($item['tahun_mulai']) ?> - <?= esc($item['tahun_selesai']) ?>
+                                <i class="fas fa-calendar-alt"></i> <?= esc($item['tahun_mulai']) ?> - <?= (empty($item['tahun_selesai']) ? 'Sekarang' : esc($item['tahun_selesai'])) ?>
                             </div>
 
                             <h5 class="card-title fw-bold position-relative">

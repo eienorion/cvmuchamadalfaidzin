@@ -18,7 +18,7 @@ $secondary_neon_color = '#ffff33';
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-card mb-4 p-4 rounded shadow-sm">
-                            <h3 class="mb-1"><i class="fas fa-school icon-white-small"></i> **<?= esc($item['sekolah']) ?>**</h3>
+                            <h3 class="mb-1"><i class="fas fa-school icon-white-small"></i> <?= esc($item['sekolah']) ?></h3>
                             
                             <?php if(!empty($item['jurusan'])): ?>
                                 <p class="jurusan-text"><i class="fas fa-book-reader icon-white-small"></i> Jurusan: <span><?= esc($item['jurusan']) ?></span></p>
